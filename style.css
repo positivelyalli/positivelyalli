@@ -1,0 +1,112 @@
+.bold {
+  font-weight: bold
+}
+
+.large_font {
+  font-size: large;
+}
+
+.margin-top-large {
+margin-top: 80px;
+}
+
+.margin-top-md {
+margin-top: 40px;
+}
+
+.center_big {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.center {
+display: block;
+margin-top: 3%;
+margin-bottom: auto;
+}
+
+.basefont {
+font-style: normal;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: #14A48B;
+}
+
+.page_bg {
+background-color: #E5E7E9;
+}
+
+.content_bg {
+background-color: #ffffff;
+}
+
+.menu {
+font-style: normal;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu_link {
+color: #ffffff !important;
+padding: .9rem 1rem;
+margin: -1rem 0rem;
+background-color:  #14A48B;
+}
+
+.contentfont {
+font-style: normal;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: #14A48B;
+text-align: center;
+}
+
+.pfont {
+font-style: normal;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: left;
+}
+
+.topnav-right {
+float: right;
+}
+
+.left_padding {
+padding-left: 100px;
+}
+
+.right_padding {
+padding-right: 100px;
+}
+
+.box_padding{
+padding-top: 40px;
+padding-bottom: 40px;
+padding-right: 40px;
+padding-left: 40px;
+}
+
+.margin_smb {
+margin-left: 40px;
+margin-right: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+}
+
+.active_img {
+border: 2px solid #14A48B;
+}
+
+.footer {
+font-style: normal;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+padding: 40px;
+background-color: ;
+}

@@ -10,8 +10,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <style>
+  /* .box {
+  height: 600px;
+  padding: 30px;
+  background: #ffffff;
+} */
 
 .bold {
     font-weight: bold
@@ -87,7 +92,7 @@
 }
 
 .left_padding {
-  padding-left: 40px;
+  padding-left: 100px;
 }
 
 .right_padding {
@@ -114,6 +119,10 @@
   }
 }
 
+.active_img {
+  border: 2px solid #14A48B;
+}
+
 .footer {
   font-style: normal;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -121,9 +130,10 @@
   padding: 40px;
   background-color: ;
 }
+
   </style>
 </head>
-<body class="page_bg">
+<body class = 'page_bg'>
   <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
     <a class="navbar-brand menu_link" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,55 +163,44 @@
     </div>
   </nav>
 
-
-  <div class="row">
-    <div class="col-lg-6 left_padding">
+  <div class="container">
         <div class="container margin-top-large content_bg box_padding">
-            <h1 class ="basefont" >Summary: Latitude X</h1>
+            <h1 class ="basefont">Comparison: Latitude vs. X</h1>
             <hr class="my-4">
-            <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig1.png" class="center margin-top-80 float-left"/>
-            <p class= "margin-top-md pfont">
-              The purpose of this project was to analyze how weather changes as you get closer to the equator.
-              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-            </p>
-            <p class="pfont">
-              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at imcluded:
-              temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
-              as well as explanations and descriptions of any tends and correlations witnessed.
-            </p>
-            
-        </div>
-    </div>
-    
-    <div class="container-fluid col-lg-6 bgcolor right_padding">
-      <div class="bold basefont margin-top-large content_bg box_padding">
-          <h2 class="basefont display-6">Visualizations</h2>
-          <hr class="my-4">
-          <div class = "container-fluid">
-            <div class='row'>
-                <div class="col">
-                    <a href="temp1.html">
-                      <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig1.png" class="center"/>
-                    </a>
-                    <a href="humidity2.html">
-                      <img alt="City Latitude vs. Humidity" src="Resources/assets/images/Fig2.png" class="center"/>
-                    </a>
-                </div>
-                <div class="col">
-                  <a href="cloudiness3.html">
-                    <img alt="City Latitude vs. Cloudiness" src="Resources/assets/images/Fig3.png" class="center"/>
-                  </a>
-                  <a href="wind4.html">
-                    <img alt="City Latitude vs. Wind Speed" src="Resources/assets/images/Fig4.png" class="center"/>
-                  </a>
-                </div>
+            <p class="box_padding">Click any plot to get an in-depth analysis.</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="temp1.html">
+                  <h5 class='contentfont'>vs. Max Temperature</h5>
+                  <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig1.png" class="center margin-top-40 img-fluid"/>
+                </a>
               </div>
-          </div>
-          
-      </div>    
-    </div>
+              <div class="col-sm-6">
+                <a href="humidity2.html">
+                  <h5 class='contentfont'>vs. Humidity</h5>
+                  <img alt="City Latitude vs. Humidity" src="Resources/assets/images/Fig2.png" class="center margin-top-40 img-fluid"/>
+                </a>
+              </div>
+              
+              <div class="col-sm-6">
+                <a href="cloudiness3.html">
+                  <h5 class='contentfont'>vs. Cloudiness</h5>
+                  <img alt="City Latitude vs. Cloudiness" src="Resources/assets/images/Fig3.png" class="img-fluid center margin-top-40"/>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="wind4.html">
+                  <h5 class='contentfont'>vs. Wind Speed</h5>
+                  <img alt="City Latitude vs. Wind Speed" src="Resources/assets/images/Fig4.png" class="img-fluid center margin-top-40"/>
+                </a>
+              </div>
+             
+            </div>
 
+
+        </div>
   </div>
+
   <footer>
     <div class = "container footer">
       <span class="text-muted">Alli Kruger for Data Analytics Bootcamp</span>

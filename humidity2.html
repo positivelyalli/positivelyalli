@@ -87,7 +87,7 @@
 }
 
 .left_padding {
-  padding-left: 40px;
+  padding-left: 100px;
 }
 
 .right_padding {
@@ -101,17 +101,12 @@
   padding-left: 40px;
 }
 
-.margin_smb {
-  margin-left: 40px;
-  margin-right: 40px;
+.tab {
+  padding-right: 5px;"
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+.active_img {
+  border: 2px solid #14A48B;
 }
 
 .footer {
@@ -155,44 +150,52 @@
 
 
   <div class="row">
-    <div class="col-lg-6 left_padding">
+    <div class="col-md-8 left_padding">
         <div class="container margin-top-large content_bg box_padding">
-            <h1 class ="basefont" >Summary: Latitude X</h1>
+            <h1 class ="basefont" >Latitude vs Humidity</h1>
             <hr class="my-4">
-            <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig1.png" class="center margin-top-80 float-left"/>
+            <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig2.png" class="center margin-top-80 float-left"/>
+            <p class= "margin-top-large pfont">
+              The graph shows the relationship between city latitude and humidity. 
+              There does not seem to be a strong relationship between city latitude and humidity. 
+              There are some bands of humidity that you can see.
+            </p>
             <p class= "margin-top-md pfont">
-              The purpose of this project was to analyze how weather changes as you get closer to the equator.
-              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+              The next step is to break out the latitudes into two sets. The first set will be for negative latitudes. 
+              The second set will be for positive latitudes since there seems to be a different relationship for each set.
+              Further research is needed to account for altitude and other factors.
             </p>
-            <p class="pfont">
-              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at imcluded:
-              temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
-              as well as explanations and descriptions of any tends and correlations witnessed.
-            </p>
-            
         </div>
     </div>
     
-    <div class="container-fluid col-lg-6 bgcolor right_padding">
+    <div class="container-fluid col-lg-4 bgcolor right_padding">
       <div class="bold basefont margin-top-large content_bg box_padding">
           <h2 class="basefont display-6">Visualizations</h2>
           <hr class="my-4">
           <div class = "container-fluid">
-            <div class='row'>
-                <div class="col">
+            <div class="row">
+                <div class="col-6 col-sm-6">
                     <a href="temp1.html">
-                      <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig1.png" class="center"/>
+                      <img alt="City Latitude vs. Max Temperature" src="Resources/assets/images/Fig1.png" class="img-fluid"/>
                     </a>
+                  </div>
+                <div class="col-6 col-sm-6">
                     <a href="humidity2.html">
-                      <img alt="City Latitude vs. Humidity" src="Resources/assets/images/Fig2.png" class="center"/>
+                      <img alt="City Latitude vs. Humidity" src="Resources/assets/images/Fig2.png" class="img-fluid active_img"/>
                     </a>
                 </div>
-                <div class="col">
+
+                <!-- Force next columns to break to new line -->
+                <div class="w-100 d-none d-md-block"></div>
+
+                <div class="col-6 col-sm-6">
                   <a href="cloudiness3.html">
-                    <img alt="City Latitude vs. Cloudiness" src="Resources/assets/images/Fig3.png" class="center"/>
+                    <img alt="City Latitude vs. Cloudiness" src="Resources/assets/images/Fig3.png" class="img-fluid"/>
                   </a>
+                </div>
+                <div class="col-6 col-sm-6">
                   <a href="wind4.html">
-                    <img alt="City Latitude vs. Wind Speed" src="Resources/assets/images/Fig4.png" class="center"/>
+                    <img alt="City Latitude vs. Wind Speed" src="Resources/assets/images/Fig4.png" class="img-fluid"/>
                   </a>
                 </div>
               </div>
